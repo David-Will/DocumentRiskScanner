@@ -1,0 +1,83 @@
+# Lines starting with hashes are comments
+# Lines starting with numbers are keywords where the number represents the risk of the keyword
+# 0 = low risk (generic terms, could be relevant, probably not)
+# 1 = medium risk (could be part of a bigger term, could be out of context)
+# 2 = high risk (sensitive terms, probably labels for info fields)
+#
+# -----------------------------------------------------------------------------------
+#
+0 Code
+0 Id
+0 Number
+0 Name
+0 Identifier
+0 Region
+2 FirstName
+2 LastName
+#
+1 Card
+2 CardNumber
+2 CardNum
+2 CardNo
+2 CreditCard
+2 CreditCardNumber
+2 CreditCardNum
+2 CreditCardNo
+1 CCV
+1 CVV
+1 BSB
+1 Bank
+1 Expiry
+1 Expire
+0 PayPal
+0 CentreLink
+#
+1 Email
+2 EmailAddress
+2 EmailAddr
+0 Gmail
+0 Hotmail
+#
+1 Phone
+2 PhoneNo
+2 PhoneNum
+2 PhoneNumber
+1 Mobile
+2 MobileNo
+2 MobileNum
+2 MobileNumber
+0 Extension
+0 Area
+#
+0 Postage
+0 Post
+0 Location
+0 Business
+1 Address
+1 Unit
+0 Line
+2 Line1
+2 Line2
+2 City
+2 Suburb
+2 Postcode
+2 State
+2 Country
+1 WA
+1 SA
+1 NT
+1 QLD
+1 NSW
+1 VIC
+1 ACT
+1 TAS
+1 AUS
+#
+1 Account
+2 AccountNo
+2 AccountNum
+2 Password
+2 Username
+2 Pwd
+1 User
+1 Login

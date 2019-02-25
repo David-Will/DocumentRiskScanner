@@ -1,0 +1,24 @@
+
+
+- keyword search
+- regexes for email/phone/card numbers
+- match words that Start With Capitals and narrow down to names
+- (can we pull a list of possible names from some public API? like, baby names?)
+- create a risk measure of each document based on number of positives (higher value for regex matches?)
+- produce report that highlights most risky documents
+
+- how do we read *any* document?
+- well we can't, obviously
+- but we can start with standard txt, microsoft office docs, pdfs, etc
+- what are the effective ways to parse these?
+
+- allow whitelist (ignore that document, it's public info etc etc)
+- let user choose sensitivity level (show me partial matches, show me uncertain matches, etc)
+- make it so it can be automated, run from terminal, obv
+- potential options:
+	--path [path] (if not supplied, same path as script location)
+	--recursive (if not supplied, don't go into subfolders)
+	--whitelist [path] (if not supplied, no whitelist)
+	--document-types [list] (if not supplied, try everything)
+	--info-types [list] (if not supplied, try everything)
+	--sensitivity [1-5] (if not supplied, maximum sensitivity)
